@@ -9,7 +9,14 @@ import Carlist from './components/Carlist';
 function App() {
   return (
     <div className="App">
-      <Carlist/>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            CarShop
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Carlist />
     </div>
   );
 }
